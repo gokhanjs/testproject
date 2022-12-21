@@ -7,5 +7,9 @@ jobs:
     steps:
       - name: Klasör
         run: |
+          cd /var/www/agency/
+          git pull
+          3kFYbXQkUH226GFRmWh2
           cd /var/www/agency/frontend/
+          export NODE_OPTIONS="--max-old-space-size=8192"
           npm run build
