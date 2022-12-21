@@ -5,5 +5,7 @@ jobs:
     name: Build
     runs-on: self-hosted
     steps:
-    - run: cd /var/www/agency/
-    - run: ls
+      - name: Klasör
+        run: |
+          cd /var/www/agency/
+          ls
