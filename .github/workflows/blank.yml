@@ -5,11 +5,10 @@ jobs:
     name: Build
     runs-on: self-hosted
     steps:
-      - name: Klasör
+      - name: Klasöre Git
         run: |
           cd /var/www/agency/
+          ls
+      - name: Git pull çek
+        run: |
           git pull origin main
-          echo ${{ secrets.PULL }}
-          cd /var/www/agency/frontend/
-          export NODE_OPTIONS="--max-old-space-size=8192"
-          npm run build
