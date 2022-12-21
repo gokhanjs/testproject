@@ -8,7 +8,5 @@ jobs:
       - name: Klasöre Git
         run: |
           cd /var/www/agency/
-          ls
-      - name: Git pull çek
-        run: |
           git pull origin main
+          
